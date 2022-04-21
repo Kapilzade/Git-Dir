@@ -1,0 +1,27 @@
+---
+#list of dictionary
+#list of fruits
+-apple:
+  name: apple
+  color: Red
+  Vitamin: A
+  country: 
+       - India
+       - france
+       - newzeland
+
+-bananas:
+   name: banana
+   color: yellow
+   Vitamin: B
+   country:
+       - India
+       - spain
+
+-Mangoes:
+    Name: mango
+    color: Red
+    Vitamin: C
+
+
+...
