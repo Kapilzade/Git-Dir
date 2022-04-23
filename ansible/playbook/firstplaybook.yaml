@@ -1,9 +1,8 @@
 ---
--name: print some text
- hosts: all
- tasks:
-     -debug:
-     msg: "Hello World"
-
+- name: print some text
+  hosts: all
+  tasks:
+  - debug:
+        msg: "Hello World"
 ...   
        
