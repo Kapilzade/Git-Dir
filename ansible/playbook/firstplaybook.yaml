@@ -1,5 +1,5 @@
 ---
- name: print some text
+-name: print some text
  hosts: all
  tasks:
      -debug:
