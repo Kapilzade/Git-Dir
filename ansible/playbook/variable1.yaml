@@ -1,8 +1,7 @@
 - name: variables playbook
   hosts: all
   vars:
-    - name: URL
-      value: "www.google.com"
+    - URL: "www.google.com"
   tasks:
     - debug: 
        msg: "{{ URL }}"
