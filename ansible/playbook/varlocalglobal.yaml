@@ -8,6 +8,6 @@
    tasks:
     - user:
        name: ansible
-       groups: ansible
+       groups: devolper
 
 ...
