@@ -1,3 +1,4 @@
+---
 - name: Add a user
   aci_aaa_user:
     host: apic
@@ -10,6 +11,8 @@
     email: dag@wieers.com
     phone: 1-234-555-678
     first_name: kaps
-    last_name: zade
+    last_name: 
     state: present
   delegate_to: localhost
+
+...
