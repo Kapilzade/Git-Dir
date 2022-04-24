@@ -1,4 +1,5 @@
 - name: Add the user 'Kapil' with a specific uid and a primary group of 'admin'
+  hosts: all
   ansible.builtin.user:
     name: Kapil
     comment: John Doe
