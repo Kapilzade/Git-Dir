@@ -1,17 +1,15 @@
-- name: variables playbook
-  hosts: all
-  vars:
-    - URL: "global.google.com"
-  tasks:
-   - name: " print hello world1 "
-     debug:
-        msg: " Please visit {{ URL }} "
-   - name: " print hello world1 "
-     debug:
-        msg: " Please visit {{ URL }} " 
-     vars:
-     URL: "global.google.com"    
-
-   - name: " print hello world2 "
-     debug:
-        msg: " Please visit {{ URL }} "
+- name: Add a user
+  aci_aaa_user:
+    host: apic
+    username: admin
+    password: SomeSecretPassword
+    aaa_user: dag
+    aaa_password: AnotherSecretPassword
+    expiration: never
+    expires: no
+    email: dag@wieers.com
+    phone: 1-234-555-678
+    first_name: Dag
+    last_name: Wieers
+    state: present
+  delegate_to: localhost
