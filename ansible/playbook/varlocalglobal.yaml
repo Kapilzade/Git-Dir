@@ -1,7 +1,13 @@
-- name: Add the user 'Kapil' with a specific uid and a primary group of 'admin'
-  hosts: all
-  ansible.builtin.user:
-    name: Kapil
-    comment: John Doe
-    uid: 1040
-    group: admin
+---
+ - name: add ansible user
+   hosts: all
+   become: true
+   become_method: sudo
+   become_user: root
+
+   tasks:
+     - user:
+       name: ansible
+       groups: ansible
+
+...
