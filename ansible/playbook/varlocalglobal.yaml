@@ -6,7 +6,6 @@
    - name: " print hello world1 "
      debug:
         msg: " Please visit {{ URL }} "
-
    - name: " print hello world1 "
      debug:
         msg: " Please visit {{ URL }} " 
