@@ -1,18 +1,6 @@
----
-- name: Add a user
-  aci_aaa_user:
-    host: apic
-    username: kapil
-    password: 123456789
-    aaa_user: dag
-    aaa_password: 123456789
-    expiration: never
-    expires: no
-    email: dag@wieers.com
-    phone: 1-234-555-678
-    first_name: kaps
-    last_name: 
-    state: present
-  delegate_to: localhost
-
-...
+- name: Add the user 'johnd' with a specific uid and a primary group of 'admin'
+  ansible.builtin.user:
+    name: Kapil
+    comment: John Doe
+    uid: 1040
+    group: admin
