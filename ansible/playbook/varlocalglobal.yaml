@@ -1,15 +1,15 @@
 - name: Add a user
   aci_aaa_user:
     host: apic
-    username: admin
-    password: SomeSecretPassword
+    username: kapil
+    password: 123456789
     aaa_user: dag
-    aaa_password: AnotherSecretPassword
+    aaa_password: 123456789
     expiration: never
     expires: no
     email: dag@wieers.com
     phone: 1-234-555-678
-    first_name: Dag
-    last_name: Wieers
+    first_name: kaps
+    last_name: zade
     state: present
   delegate_to: localhost
