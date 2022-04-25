@@ -16,8 +16,8 @@
     - name: print cloudblitz
       debug:
         msg: "Please visit {{ URL }}"
-      vars:
-      URL: "local.cloudblitz.in"
+     # vars:
+       # URL: "local.cloudblitz.in"
     - name: print OS
       debug:
         msg: "Please visit {{ ansible_distribution }}"
