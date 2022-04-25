@@ -1,4 +1,3 @@
----
 - name: install service httpd
   hosts: all
   yum: 
@@ -13,4 +12,3 @@
   ansible.builtin.service:
     name: httpd
     state: enable
-...
