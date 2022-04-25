@@ -1,0 +1,23 @@
+ - name: Create dir
+   file:
+     path: "{{ direct }}"
+     state: directory
+     mode: '0755'
+
+ - name: Create file
+   file:
+     path: "{{ direct}}/{{ files }}"
+     state: touch
+
+ - name: add group
+   group:
+     name: "{{ namegroup}}"
+     state: present
+     gid: 1040
+
+ - name: add user 
+   user: 
+     name: "{{ username }}"
+     group: "{{ namegroup}}"
+     shell: /bin/bash
+     password: "{{ passworduser }}"
