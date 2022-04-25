@@ -1,0 +1,26 @@
+- name: playbook for debug
+  hosts: all
+  #vars_files:
+  #  - ./varFile
+  #vars_prompt:
+  #  - name: URL
+  #    prompt: "Please enter your website"
+  #    private: false
+  vars:
+    URL: "www.cloudblitz.in"
+  #gather_facts: True
+  tasks:
+    - name: print hello world
+      debug:
+        msg: "Please visit {{ URL }}"
+    - name: print cloudblitz
+      debug:
+        msg: "Please visit {{ URL }}"
+     # vars:
+       # URL: "local.cloudblitz.in"
+    - name: print OS
+      debug:
+        msg: "Please visit {{ ansible_distribution }}"
+    - name: print IP
+      debug:
+        msg: "Please visit {{ ansible_default_ipv4.address }}"
