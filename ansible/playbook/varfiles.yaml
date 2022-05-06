@@ -1,7 +1,7 @@
 - name: variables playbook
   hosts: all
-  vars:
-    - URL: "www.google.com"
+ # vars:
+   # - URL: "www.google.com"
   vars_files:
             ./var.data
   tasks:
