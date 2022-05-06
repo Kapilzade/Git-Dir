@@ -1,5 +1,5 @@
-- name: variables playbook
+- name : variables playbook
   hosts: all
   tasks:
-  -debug:
-    msg: "www.google.com"
+    - debug:
+      msg: "www.google.com"
