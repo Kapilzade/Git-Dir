@@ -6,8 +6,9 @@
      - ./var.data
  
   vars_prompt:
-   -name: URL
-   prompt: "Enter the urlof yourcompany"
+   
+- name:
+   prompt: "Enter the url of yourcompany"
    private: no 
  
   tasks:
