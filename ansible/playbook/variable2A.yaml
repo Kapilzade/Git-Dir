@@ -13,4 +13,6 @@
      vars:
          URL : "local.google.com"
 
-    
+   - name: " print hello world3 "
+     debug:
+        msg: " Please visit {{ URL }} "
