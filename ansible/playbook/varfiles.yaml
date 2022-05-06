@@ -3,7 +3,7 @@
   vars:
     - URL: "www.google.com"
   vars_files:
-      ./var.data
+     - ./var.data
   tasks:
    - name: " print hello world1 "
      debug:
