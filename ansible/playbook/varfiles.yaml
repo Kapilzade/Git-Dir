@@ -3,4 +3,18 @@
   vars:
     - URL: "www.google.com"
   vars_files:
-             ./var.data
+            ./var.data
+  tasks:
+   - name: " print hello world1 "
+     debug:
+        msg: " Please visit {{ URL }} "
+
+   - name: " print hello world2 "
+     debug:
+          msg: " Please visit {{ URL }} "
+     vars:
+         URL : "local.google.com"
+
+   - name: " print hello world3 "
+     debug:
+        msg: " Please visit {{ URL }} "
