@@ -1,4 +1,4 @@
-- name : variables playbook
+- name: variables playbook
   hosts: all
   tasks:
   -debug:
