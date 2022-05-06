@@ -2,12 +2,12 @@
   hosts: all
   vars:
     - URL: "www.google.com"
- 
   vars_prompt:
+
 - name:
    prompt: "Enter the url of yourcompany"
    private: no 
- 
+    
   tasks:
    - name: " print hello world1 "
      debug:
