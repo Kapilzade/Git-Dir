@@ -3,10 +3,10 @@
   vars:
     - URL: "www.google.com"
   vars_prompt:
-  - name:
-  prompt: "Enter the url of yourcompany"
-  private: no 
-    
+  - name: my_password_with_weird_chars
+    prompt: "Enter the URL of Company"
+    unsafe: no
+    private: yes
   tasks:
    - name: " print hello world1 "
      debug:
