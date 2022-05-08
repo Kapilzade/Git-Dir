@@ -3,7 +3,7 @@
   vars:
     - URL: "www.google.com"
   vars_prompt:
-  - name: my_password_with_weird_chars
+  - name: URL
     prompt: "Enter the URL of Company"
     unsafe: no
     private: yes
