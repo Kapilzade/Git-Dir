@@ -6,7 +6,7 @@
   vars_prompt:
   - name: URL
     prompt: "Enter the URL of Company"
-    unsafe: no
+    unsafe: yes
     private: yes
   tasks:
    - name: " print hello world1 "
