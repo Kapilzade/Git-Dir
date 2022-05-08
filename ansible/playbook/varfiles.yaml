@@ -1,7 +1,8 @@
 - name: variables playbook
   hosts: all
   vars:
-    - URL: "www.google.com"
+    - URL1: "www.google.com"
+    - URL2: "www.yahoo.com"
   vars_prompt:
   - name: URL
     prompt: "Enter the URL of Company"
@@ -10,7 +11,7 @@
   tasks:
    - name: " print hello world1 "
      debug:
-        msg: " Please visit {{ URL }} "
+        msg: " Please visit {{ URL1 }} "
 
    - name: " print hello world2 "
      debug:
@@ -20,4 +21,4 @@
 
    - name: " print hello world3 "
      debug:
-        msg: " Please visit {{ URL }} "
+        msg: " Please visit {{ URL2 }} "
