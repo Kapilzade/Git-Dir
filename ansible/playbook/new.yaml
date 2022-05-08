@@ -11,7 +11,7 @@
 
    - name: print os distribution
      debug:
-      msgs: "{{ ansible_distribution }}"
+      msg: "{{ ansible_distribution }}"
 
    - name: print os distribution
      debug:
