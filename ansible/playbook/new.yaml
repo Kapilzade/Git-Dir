@@ -1,0 +1,29 @@
+- name: variables playbook
+  hosts: all
+  vars:
+    - URL1: "www.google.com"
+    - URL2: "www.yahoo.com"
+  tasks:
+   - name: " print hello world1 "
+     debug:
+        msg: " Please visit {{ URL1 }} "
+
+   - name: print os distribution
+     debug:
+      msgs: "{{ ansible_distribution }}"
+
+   - name: print os distribution
+     debug:
+      msg: "{{ ansible_eth0.ipv4.address }}"
+
+   - name: " print hello world2 "
+     debug:
+          msg: " Please visit {{ URL }} "
+     vars:
+         URL : "local.google.com"
+
+   - name: " print hello world3 "
+     debug:
+        msg: " Please visit {{ URL2 }} " 
+
+   
