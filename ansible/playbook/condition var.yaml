@@ -3,8 +3,8 @@
   tasks:
    - name: RedHat
      debug:
-       msg: "this is Redhat family"
-     when: ansible_distribution_file_variety == " RedHat "
+       msg: "this is RedHat family"
+     when: ansible_distribution_file_variety == "RedHat"
    - name: ubuntu
      debug:
        msg: "this is Ubuntu"
