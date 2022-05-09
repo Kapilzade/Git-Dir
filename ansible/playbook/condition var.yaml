@@ -1,0 +1,10 @@
+- name: condition exaple
+  hosts: all
+  tasks:
+   - name: Centos
+     debug:
+       msg: "this is Centos"
+
+   - name: ubuntu
+     debug:
+       msg: "this is Ubuntu"
