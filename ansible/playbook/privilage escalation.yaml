@@ -5,10 +5,10 @@
     - name: execute dmidecode cmd
       shell:
        cmd : /sbin/dmidecode
-      register: OUTPUT
+      register: OUT
     - name: print output
       debug:
-       msg :"{{ OUTPUT }}"
+       msg :"{{ OUT }}"
 
 
 
