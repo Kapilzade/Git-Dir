@@ -4,8 +4,16 @@
    - name: RedHat
      debug:
        msg: "this is RedHat family"
-     when: ansible_distribution_file_variety == "RedHat" and ansible_distribution == "Centos"
+     when: ansible_distribution_file_variety == "RedHat" or ansible_distribution == "Centos"
    - name: ubuntu
      debug:
        msg: "this is Ubuntu"
      when: ansible_distribution_file_variety == " Ubuntu "
+
+
+
+
+
+# first perform without "and" when redhat distribution found then task is performed
+# in "and " in case both distribution is same then task is performed
+# in "or" in case one conditionis true then  task will be performed
