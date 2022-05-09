@@ -12,10 +12,12 @@
    - name: print os distribution
      debug:
       msg: "{{ ansible_distribution }}"
+     ignore_errors: yes
 
    - name: print os distribution
      debug:
       msg: "{{ ansible_eth0.ipv4.address }}"
+     ignore_errors: yes
 
    - name: " print hello world2 "
      debug:
