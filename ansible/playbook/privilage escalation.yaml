@@ -3,23 +3,11 @@
   tasks:
     - name: execute dmidecode cmd
       shell:
-      cmd : dmidecode
+      cmd : /sbin/dmidecode
       register: OUTPUT
     - name: print output
       debug:
        msg :"{{ OUTPUT }}"
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
