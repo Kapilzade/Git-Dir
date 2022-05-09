@@ -1,6 +1,6 @@
 - name: register variable demo
   hosts: all
   tasks:
-    - name: uptime 
-    - debug:
-         msg: "hello world this is register variable"
+    - name: get uptime 
+    - shell:
+         args: uptime
