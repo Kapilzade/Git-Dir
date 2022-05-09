@@ -4,7 +4,7 @@
   tasks:
     - name: execute dmidecode cmd
       shell:
-       args : /sbin/dmidecode
+       cmd : /sbin/dmidecode
       register: OUTPUT
     - name: print output
       debug:
