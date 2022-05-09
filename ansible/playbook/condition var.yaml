@@ -1,7 +1,7 @@
 - name: condition exaple
   hosts: all
   tasks:
-   - name: redhat
+   - name: RedHat
      debug:
        msg: "this is Redhat family"
      when: ansible_distribution_file_variety == " RedHat "
