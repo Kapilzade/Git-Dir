@@ -4,6 +4,10 @@
     - name: execute dmidecode cmd
       shell:
       cmd : dmidecode
+      register: OUTPUT
+    - name: print output
+      debug:
+       msg :"{{ OUTPUT }}"
 
 
 
