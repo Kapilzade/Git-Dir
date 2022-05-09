@@ -8,7 +8,7 @@
 
     - name: print up time
       debug: 
-          msg: "{{ UT.stdout.start }}"
+          msg: "{{ UT.stdout }}"
 
 
 
