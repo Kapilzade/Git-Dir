@@ -1,4 +1,4 @@
-- name:
+- name: priveleges escalation demo
   hosts: all
   tasks:
     - name: execute dmidecode cmd
