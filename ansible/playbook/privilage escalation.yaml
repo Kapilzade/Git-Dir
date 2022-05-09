@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#when we login in system ec2-user/centos that time you cant install package without sudo bcz this are local user.
+#when we apply sudo we give to privilage to this local user
