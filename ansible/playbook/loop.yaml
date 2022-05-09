@@ -2,3 +2,10 @@
   hosts: all
   tasks:
     - name: print loop
+      debug:
+       msg: "{{ item }}"
+      loop:
+      - Red
+      - yellow
+      - black
+      - white
