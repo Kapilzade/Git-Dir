@@ -1,0 +1,20 @@
+- name: tags demo
+  hosts: all
+  tasks:
+    - name: print redhat
+      debug:
+       msg: "this is Redhat"
+      tags:
+         - Redhat
+       
+    - name: print Ubuntu
+      debug:
+       msg: "this is Ubuntu"
+      tags:
+       - Ubuntu
+
+    - name: print kali linux
+      debug:
+       msg: "this is kali linux"
+      tags:
+      - kali linux
