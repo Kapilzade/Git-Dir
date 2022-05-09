@@ -1,6 +1,6 @@
 - name: variables playbook
   hosts: all
-  gather_facts: True
+  gather_facts: False
   vars:
     - URL1: "www.google.com"
     - URL2: "www.yahoo.com"
