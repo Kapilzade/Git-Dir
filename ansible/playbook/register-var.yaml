@@ -14,8 +14,9 @@
 
 
 
-
+ 
 
 # UT shows all details
  #cmd or args use for registered variable 
  #UT.stdout show only perticular output 
+ #register variable is a way to capture from task execution and store it in a variable.
