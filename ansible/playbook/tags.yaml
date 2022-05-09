@@ -18,3 +18,7 @@
        msg: "this is kali linux"
       tags:
       - kali linux
+
+
+#tags is use for identity 
+#IN case i want skip Ubuntu task that time this var is use"ansible-playbook tags.yaml --skip-tags=Ubuntu"
