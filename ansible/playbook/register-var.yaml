@@ -8,4 +8,4 @@
 
     - name: print up time
       debug: 
-          msg: "{{ UT }}"
+          msg: "{{ UT.stdout }}"
