@@ -12,7 +12,7 @@
 
 
 
-
+#"become " can be use localy and globally
 #for provide privilage for usr "become"is  provide  and is by default false make true"
 #when we login in system ec2-user/centos that time you cant install package without sudo bcz this are local user.
 #when we apply sudo we give to privilage to this local user
