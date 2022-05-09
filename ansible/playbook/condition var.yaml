@@ -1,9 +1,9 @@
 - name: condition exaple
   hosts: all
   tasks:
-   - name: Redhat
+   - name: redhat
      debug:
-       msg: "this is Redhat"
+       msg: "this is Redhat family"
      when: ansible_distribution_file_variety == " Redhat "
    - name: ubuntu
      debug:
