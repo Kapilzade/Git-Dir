@@ -1,0 +1,4 @@
+- name:
+  hosts: all
+  tasks:
+    - name: print loop
