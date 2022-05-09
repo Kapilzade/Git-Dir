@@ -4,7 +4,7 @@
    - name: RedHat
      debug:
        msg: "this is RedHat family"
-     when: ansible_distribution_file_variety == "RedHat" AND ansible_distribution == "Centos"
+     when: ansible_distribution_file_variety == "RedHat" and ansible_distribution == "Centos"
    - name: ubuntu
      debug:
        msg: "this is Ubuntu"
