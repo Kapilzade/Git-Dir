@@ -4,8 +4,8 @@
    - name: Centos
      debug:
        msg: "this is Centos"
-     when: " {{ ansible_distribution_file_variety }} == Centos"
+     when: ansible_distribution_file_variety == " Centos "
    - name: ubuntu
      debug:
        msg: "this is Ubuntu"
-     when: " {{ ansible_distribution_file_variety }} == Ubuntu"
+     when: ansible_distribution_file_variety == " Ubuntu "
