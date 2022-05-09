@@ -2,5 +2,5 @@
   hosts: all
   tasks:
     - name: get uptime 
-    - shell:
+      shell:
          args: uptime
