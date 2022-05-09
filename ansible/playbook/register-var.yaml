@@ -8,4 +8,14 @@
 
     - name: print up time
       debug: 
-          msg: "{{ UT.stdout }}"
+          msg: "{{ UT.stdout.start }}"
+
+
+
+
+
+
+
+# UT shows all details
+ #cmd or args use for registered variable 
+ #UT.stdout show only perticular output 
