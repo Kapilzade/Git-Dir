@@ -6,12 +6,12 @@
      yum:
        name: httpd
        state: latest
-       
+
    - name: start and enable service
      service:
       name: httpd
       stage: started
-      enabled: yes
+      #enabled: yes
 
    - name: upload website in /var/www/html
      copy:
