@@ -11,8 +11,8 @@
    - name: start and enabled service
      service:
       name: httpd
-      stage: started
-      enabled: yes
+      state: started
+      enabled: true
 
    - name: upload website in /var/www/html
      copy:
