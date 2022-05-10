@@ -16,6 +16,6 @@
 
    - name: upload website in /var/www/html
      copy:
-      src: ./index.html
+      src: ./front-end/*
       dest: /var/www/html
      
