@@ -1,17 +1,18 @@
 - name: web server playbook
   hosts: all
   become: true
+  
   tasks:
    - name: install httpd package
      yum:
        name: httpd
        state: latest
 
-   - name: start service
+   - name: start and enabled service
      service:
       name: httpd
       stage: started
-      #enabled: yes
+      enabled: yes
 
    - name: upload website in /var/www/html
      copy:
