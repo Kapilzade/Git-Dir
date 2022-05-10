@@ -2,14 +2,12 @@
   yum:
        name: httpd
        state: latest
-  become: true
 
 - name: start and enabled service
   service:
       name: httpd
       state: started
       enabled: true 
-  become: true
 
 - name: upload website in /var/www/html
   copy:
