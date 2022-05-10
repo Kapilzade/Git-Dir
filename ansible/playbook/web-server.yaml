@@ -10,3 +10,8 @@
       name: httpd
       stage: started
       enabled: yes
+   - name: upload website in /var/www/html
+     src: ./index.html
+     dest: /var/www/html/
+     remote src: yes
+     
