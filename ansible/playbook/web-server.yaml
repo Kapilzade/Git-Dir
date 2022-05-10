@@ -7,7 +7,7 @@
        name: httpd
        state: latest
 
-   - name: start and enabled service
+   - name: start service
      service:
       name: httpd
       stage: started
