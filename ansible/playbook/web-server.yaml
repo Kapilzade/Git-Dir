@@ -1,0 +1,12 @@
+- name: web server playbook
+  hosts: all
+  tasks:
+   - name: install httpd package
+     yum:
+       name: httpd
+       state: latest
+   - name: start and enable service
+     service:
+      name: httpd
+      stage: started
+      enabled: yes
