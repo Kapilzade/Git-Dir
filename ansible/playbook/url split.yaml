@@ -14,4 +14,8 @@
         msg: "{{ 'https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.78/bin/apache-tomcat-8.5.78.tar.gz' | basename }}"
 
     
+    - name: regex replace tar.gz to only name
+      debug:
+      msg: "{{ 'apache-tomcat-8.5.78.tar.gz ' | regex_replace('.tar.gz','') }}"
+    
     #way of split path of dir or extract file
