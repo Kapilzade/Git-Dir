@@ -1,5 +1,5 @@
 URL: "https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.78/bin/apache-tomcat-8.5.78.tar.gz"
-ZIP_PATH: " /opt/{{ URL.split('/') | last }} "
+ZIP_PATH: " {{ URL.split('/') | last }} "
 TOMCAT_PATH: "/opt/{{ ZIP_PATH | regex_replace('.tar.gz','') }}"
 URL_student_war_or_app_url: "https://s3-us-west-2.amazonaws.com/studentapi-cit/student.war"
 
