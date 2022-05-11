@@ -7,7 +7,7 @@
   get_url:
      url: " {{ URL }} "
      dest: "/opt/"
-     validate_certs: no
+     
 
 - name: unzip tomcat8
   unarchive:
