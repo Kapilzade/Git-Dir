@@ -21,7 +21,7 @@
 
 - name: start catalina service
   shell: '{{ TOMCAT_PATH }}/bin/catalina.sh start'
-  args: start
+  
 
    
 
