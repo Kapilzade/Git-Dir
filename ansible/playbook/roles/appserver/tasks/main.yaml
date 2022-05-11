@@ -1,0 +1,32 @@
+- name: install java
+  package:
+    name: java
+    state: latest
+
+- name: download tomacat8
+  get_url:
+     url: {{ URL }}
+     dest: /opt
+
+- name: unzip tomcat8
+  unarchive:
+     src: /opt/{{ URL_PATH }}
+     dest: /opt/
+     remote_src: yes
+
+- name: download student.war
+  get_url:
+    url: {{ URL_student_war_or_app_url }}
+    dest: " {{ TOMCAT_PATH }}/webapps/ "
+
+- name: start catalina service
+  shell: '{{ TOMCAT_PATH }}/bin/catalina.sh start'
+
+   
+
+
+
+
+
+
+#remote_src use for in case your file on remote location **for copy in local machine bcz file in node server location
