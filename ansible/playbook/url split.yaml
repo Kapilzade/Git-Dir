@@ -1,0 +1,6 @@
+- name: url split with the help of string
+  hosts: all
+  tasks:
+    - name: url split
+      debug:
+        msg: "{{'https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.78/bin/apache-tomcat-8.5.78.tar.gz' | urlsplit('path') }}"
