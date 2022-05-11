@@ -16,6 +16,6 @@
     
     - name: regex replace tar.gz to only name
       debug:
-      msg: "{{ 'apache-tomcat-8.5.78.tar.gz ' | regex_replace('.tar.gz','') }}"
+       msg: "{{ 'apache-tomcat-8.5.78.tar.gz ' | regex_replace('.tar.gz','') }}"
     
     #way of split path of dir or extract file
