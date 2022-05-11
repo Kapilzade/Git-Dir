@@ -5,6 +5,6 @@
       debug:
         msg: "{{'https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.78/bin/apache-tomcat-8.5.78.tar.gz' | urlsplit('path') }}"
 
-    - name: url split
+    - name: url split basename
       debug:
         msg: "{{ 'https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.78/bin/apache-tomcat-8.5.78.tar.gz' | urlsplit('path') | basename }}"
