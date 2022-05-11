@@ -5,7 +5,7 @@
 
 - name: download tomacat8
   get_url:
-     url: {{ URL }}
+     url: " {{ URL }} "
      dest: /opt
 
 - name: unzip tomcat8
