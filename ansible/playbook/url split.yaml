@@ -19,3 +19,4 @@
        msg: "{{ 'apache-tomcat-8.5.78.tar.gz ' | regex_replace('.tar.gz','') }}"
     
     #way of split path of dir or extract file
+    # regex replace use for rplace name of extract file
