@@ -6,7 +6,8 @@
 - name: download tomacat8
   get_url:
      url: " {{ URL }} "
-     dest: "/opt"
+     dest: "/opt/"
+     validate_certs: no
 
 - name: unzip tomcat8
   unarchive:
