@@ -13,7 +13,7 @@
   unarchive:
    src: " /opt/{{ URL_PATH }} " 
    dest: "/opt/"
-   remote_src: yes
+   remote_src: true
 
 - name: download student.war
   get_url:
