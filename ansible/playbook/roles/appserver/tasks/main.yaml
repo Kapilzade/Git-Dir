@@ -11,7 +11,7 @@
 
 - name: unzip tomcat8 to /opt
   unarchive:
-   src:  /opt/{{ URL_PATH }}
+   src:  /opt/{{ ZIP_PATH }}
    dest: /opt/
    remote_src: true
 
