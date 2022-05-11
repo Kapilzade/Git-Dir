@@ -1,5 +1,5 @@
 URL: "https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.78/bin/apache-tomcat-8.5.78.tar.gz"
-URL_PATH: " {{ URL | basename }} "
+URL_PATH: " {{ 'https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.78/bin/apache-tomcat-8.5.78.tar.gz' | basename }} "
 TOMCAT_PATH: "/opt/{{ URL_PATH | regex_replace ('.tar.gz','') }}"
 URL_student_war_or_app_url: "https://s3-us-west-2.amazonaws.com/studentapi-cit/student.war"
 
