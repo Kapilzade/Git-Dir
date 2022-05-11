@@ -10,9 +10,9 @@
 
 - name: unzip tomcat8
   unarchive:
-     src: " /opt/{{ URL_PATH }} " 
-     dest: /opt/
-     remote_src: yes
+   src: " /opt/{{ URL_PATH }} " 
+   dest: /opt/
+   remote_src: yes
 
 - name: download student.war
   get_url:
