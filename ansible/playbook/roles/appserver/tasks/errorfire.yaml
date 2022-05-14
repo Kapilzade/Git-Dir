@@ -1,0 +1,6 @@
+
+- name: unzip tomcat8 to opt
+  unarchive:
+    src: "/opt/{{ ZIP_PATH }}"
+    dest: "/opt/"
+    remote_src: true
