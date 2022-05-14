@@ -1,8 +1,8 @@
 
-- name: unzip tomcat8 to opt
+- name: unzip tomcat8 to opt 
   hosts : all
   tasks:
-  unarchive:
-    src: "/opt/{{ ZIP_PATH }}"
-    dest: "/opt/"
-    remote_src: true
+     unarchive:
+       src: "/opt/{{ ZIP_PATH }}"
+       dest: "/opt/"
+       remote_src: true
