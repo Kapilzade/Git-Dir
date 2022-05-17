@@ -1,10 +1,11 @@
 provider "aws" {
-  region = "us-east-1"
+    region = "us-west-1"
+ 
 }
-
-resource "aws_instance" "web-server" {
-  ami = "ami-09d56f8956ab235b3"
+resource "aws_instance" "webserver" {
+  ami = "ami-02541b8af977f6cdd"
   instance_type = "t2.micro"
-  security_groups = ["default"]
-  key_name = "halland"
+  tags = {
+    "Name" = "instance1"
+  }
 }
