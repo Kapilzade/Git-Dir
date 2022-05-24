@@ -9,10 +9,6 @@ node {
         echo "Deploy Done"
         
     }
-     post {
-        always {
-            emailext body: 'kapilzade26@gmail.com', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Test'
-        }
-     }
+     
 }
 
