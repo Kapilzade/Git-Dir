@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Pull') { 
             steps {
-                git : git'https://github.com/Kapilzade/student-app.git'
+              git'https://github.com/Kapilzade/student-app.git'
             }
         }
         stage('Build') { 
