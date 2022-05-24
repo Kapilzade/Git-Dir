@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Pull') { 
             steps {
-              git'https://github.com/Kapilzade/student-app.git'
+              git branch: 'main', credentialsId: 'https://github.com/Kapilzade/Git-Dir.git', url: 'https://github.com/Kapilzade/student-app.git'
             }
         }
         stage('Build') { 
