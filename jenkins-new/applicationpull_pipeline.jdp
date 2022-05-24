@@ -1,9 +1,10 @@
+
 pipeline {
     agent any 
     stages {
         stage('Pull') { 
             steps {
-                git branch: git branch: 'main', credentialsId: 'fe9d4e48-4bda-4850-8d6f-2614e4d72598', url: 'https://gitlab.com/gitlab-function/jenkins-demo.git/studentapp-ui'
+                git branch: 'https://github.com/Kapilzade/student-upi.git'
             }
         }
         stage('Build') { 
