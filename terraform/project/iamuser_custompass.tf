@@ -3,6 +3,7 @@ provider "aws" {
   secret_key = NyrvAdHadg5WWq5KjCbaxs9f+4jYkXXN9JBG6Xjp
   region = us-east-2
 }
+
 resource "aws_iam_user" "terraform" {
 name = "awsuser" 
 path = "/"
