@@ -1,3 +1,6 @@
+provider "aws" {
+  
+}
 resource "aws_iam_user" "terraform" {
 name = "awsuser" 
 path = "/"
