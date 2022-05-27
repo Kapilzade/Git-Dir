@@ -1,3 +1,20 @@
+resource "aws_iam_role" "ec2_role" {
+  name =  "ec2_role"
+     assume_role_policy = jsonencode ({
+      version = "2012-10-17"
+      statement = [
+          {
+              Action = "sts:Assumerole"
+              Effect =  "Allow"
+               Sid   = ""
+              Principal = {
+                  service = "ec2.amazon.com"
+              }
+          }
+      ]
+  })
+}
+
 resource "aws_iam_policy" "policy" {
   name        = "test-policy"
   description = "A test policy"
@@ -43,25 +60,7 @@ resource "aws_iam_policy" "policy" {
         }
     ]
   })
- Resource "aws_iam_role" "ec2_role" {
-     name =  "ec2_role"
-     assume_role_policy = jsonencode({
-      version = "2012-10-17"
-      statement = [
-          {
-              Action = "sts:Assumerole"
-              Effect =  "Allow"
-               Sid   = ""
-              Principal = {
-                  service = "ec2.amazon.com"
-              }
-          }
-      ]
-  })
-}
-
-
- Resource "aws_iam_role_policy_attachment" "test-attach" {
+ resource "aws_iam_role_policy_attachment" "test-attach" {
      name       = "test-attach"
      role       = aws_iam_role.ec2_role.name
      policy_arn = aws_iam_policy.policy_arn
