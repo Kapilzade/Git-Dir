@@ -43,6 +43,8 @@ resource "aws_iam_policy" "policy" {
         }
     ]
   })
+
+
 resource "aws_iam_role" "ec2_role" {
   name =  "ec2_role"
   assume_role_policy = jsonencode({
@@ -59,6 +61,7 @@ resource "aws_iam_role" "ec2_role" {
       ]
   })
 }
+
 
 resource "aws_iam_role_policy_attachment" "test-attach" {
   role       = aws_iam_role.ec2_role.name
