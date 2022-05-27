@@ -43,7 +43,7 @@ resource "aws_iam_policy" "policy" {
         }
     ]
   })
-
+}
 
 /*resource "aws_iam_role" "ec2_role" {
      name =  "ec2_role"
