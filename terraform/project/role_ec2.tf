@@ -3,6 +3,7 @@ resource "aws_iam_policy" "ec2_policy" {
     path = "/"
     description = "policy attach ec2 and provide permission"
     policy = jsoncode
-    terraform import aws_iam_policy.administartor arn:aws:iam::aws:policy/AmazonEC2FullAccess 
-
+    ("{terraform import aws_iam_policy."administartor arn:aws:iam::aws:policy/AmazonEC2FullAccess"}")
+    
 }
+
