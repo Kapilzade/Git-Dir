@@ -53,5 +53,5 @@ resource "aws_instance" "app-server" {
   instance_type = "t2.micro"
   key_name = "flame"
   iam_instance_profile = aws_iam_instance_profile.ec2_profile.name
-  security_security_id = "sg-00b38a8bfe6eb9d9a"
+
 }
