@@ -46,8 +46,8 @@ resource "aws_iam_policy" "policy" {
 
 
  resource "aws_iam_role" "ec2_role" {
-  name =  "ec2_role"
-  assume_role_policy = jsonencode({
+     name =  "ec2_role"
+     assume_role_policy = jsonencode({
       version = "2012-10-17"
       statement = [
           {
