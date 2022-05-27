@@ -45,7 +45,7 @@ resource "aws_iam_role_policy_attachment" "test-attach" {
 
 resource "aws_iam_instance_profile" "ec2_profile" {
     name = "ec2_profile"
-    role = aws_iam_role.test-role
+    role = aws_iam_role.role.name
   
 }
 resource "aws_instance" "app-server" {
