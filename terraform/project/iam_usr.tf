@@ -1,17 +1,17 @@
-resource "aws_iam_user" "terraform" {
+#resource "aws_iam_user" "terraform" {
 name = "awsuser" 
 path = "/"
 force_destroy = true
 }
 
-resource "aws_iam_user_login_profile" "awsuser_profile" {
+#resource "aws_iam_user_login_profile" "awsuser_profile" {
  user  = aws_iam_user.terraform.name
  pgpgp_key = "keybase:saurabh"
  
   
 }
  
-output "password" {
+#output "password" {
   value = aws_iam_user_login_profile.awsuser_profile.encrypted_password
 
 }
