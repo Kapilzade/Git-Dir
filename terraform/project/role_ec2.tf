@@ -1,4 +1,4 @@
-resource "aws_iam_policy" "ec2_policy1" {
+resource "aws_iam_policy" "policy" {
     name = "ec2_policy1"
     path = "/"
     description = "policy attach ec2 and provide permission"
