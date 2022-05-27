@@ -6,7 +6,7 @@ force_destroy = true
 
 resource "aws_iam_user_login_profile" "awsuser_profile" {
  user  = aws_iam_user.terraform.name
- pgp_key  = "keybase:kapilzade"
+ pgp_key  = "keybase:saurabh"
   
 }
  
