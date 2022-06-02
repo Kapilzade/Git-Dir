@@ -1,0 +1,60 @@
+Type: AWS::EC2::Instance
+Properties: 
+  AdditionalInfo: String
+  Affinity: String
+  AvailabilityZone: String
+  BlockDeviceMappings: 
+    - BlockDeviceMapping
+  CpuOptions: 
+    CpuOptions
+  CreditSpecification: 
+    CreditSpecification
+  DisableApiTermination: Boolean
+  EbsOptimized: Boolean
+  ElasticGpuSpecifications: 
+    - ElasticGpuSpecification
+  ElasticInferenceAccelerators: 
+    - ElasticInferenceAccelerator
+  EnclaveOptions: 
+    EnclaveOptions
+  HibernationOptions: 
+    HibernationOptions
+  HostId: String
+  HostResourceGroupArn: String
+  IamInstanceProfile: String
+  ImageId: ami-0fa49cc9dc8d62c84
+
+  InstanceInitiatedShutdownBehavior: String
+  InstanceType: t2.micro
+  Ipv6AddressCount: Integer
+  Ipv6Addresses: 
+    - InstanceIpv6Address
+  KernelId: String
+  KeyName: 3_tier_my_key.pem
+  LaunchTemplate: 
+    LaunchTemplateSpecification
+  LicenseSpecifications: 
+    - LicenseSpecification
+  Monitoring: Boolean
+  NetworkInterfaces: 
+    - NetworkInterface
+  PlacementGroupName: String
+  PrivateDnsNameOptions: 
+    PrivateDnsNameOptions
+  PrivateIpAddress: String
+  PropagateTagsToVolumeOnCreation: Boolean
+  RamdiskId: String
+  SecurityGroupIds: 
+    - String
+  SecurityGroups: 
+    - String
+  SourceDestCheck: Boolean
+  SsmAssociations: 
+    - SsmAssociation
+  SubnetId: String
+  Tags: 
+    - Tag
+  Tenancy: String
+  UserData: String
+  Volumes: 
+    - Volume
