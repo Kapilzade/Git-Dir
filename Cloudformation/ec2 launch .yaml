@@ -4,7 +4,7 @@
       "Properties" : {
         "InstanceType" : { "Ref" : "t2.micro" },
         "SecurityGroups" : [ { "Ref" : "InstanceSecurityGroup" } ],
-        "KeyName" : { "Ref" : "KeyName" },
+        "KeyName" : { "Ref" : "flame" },
         "ImageId" : { "Ref" : "ami-02f3416038bdb17fb"}
       }
     },
@@ -21,4 +21,6 @@
         } ]
       }
     }
+    
+
   }
