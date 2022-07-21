@@ -1,0 +1,29 @@
+---
+- apple
+- mango
+...
+
+---
+name: kapil
+Designation: Devops Engineer
+location: pune,nagpur
+...
+
+- apple:
+    name: apple
+    color: red
+    vitamin: A
+- mango:
+    name: mango
+    color: yellow
+    vitamin: B
+    country:
+         india
+         spain
+         france
+myaddress: |
+    121,A,Geeta nagar
+    Nagpur
+    Maharashtra,India
+ 
+...
