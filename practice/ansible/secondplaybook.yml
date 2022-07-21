@@ -1,0 +1,5 @@
+- name: print txt
+  hosts: all
+  tasks: 
+     - debug:
+          msg: "Hello World i am robot"
