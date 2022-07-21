@@ -17,5 +17,9 @@ location: pune,nagpur
     name: mango
     color: yellow
     vitamin: B
+    country:
+         india
+         spain
+         france
  
 ...
