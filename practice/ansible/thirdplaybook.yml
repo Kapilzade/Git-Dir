@@ -21,5 +21,9 @@ location: pune,nagpur
          india
          spain
          france
+myaddress: |
+    121,A,Geeta nagar
+    Nagpur
+    Maharashtra,India
  
 ...
