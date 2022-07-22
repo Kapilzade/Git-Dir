@@ -4,4 +4,8 @@
     - name: get uptime
       shell:
           cmd: uptime
-    
+      register: UT
+
+    - name: print uptime
+      debug:
+          msg: "this is Up time {{UT}}"  
