@@ -1,0 +1,16 @@
+- name: condition demo
+  hosts: all
+  tasks:
+  - name: redhat
+    debug:
+       msg: "this is a redhat family"
+    when: ansible_os_family  == "RedHat" and ansible_os_family == "Centos"
+    tags:
+       - redhat  
+  - name: Centos
+    debug:
+       msg: "this is a Centos Family"
+    when: ansible_os_family == "Centos" or ansible_os_family == "RedHat"
+
+
+    #practice time image is aws m/c 
