@@ -4,7 +4,7 @@
   - name: redhat
     debug:
        msg: "this is a redhat family"
-    when: ansible_os_family  == "Redhat"
+    when: ansible_os_family  == "RedHat"
   - name: Centos
     debug:
        msg: "this is a Centos Family"
