@@ -1,0 +1,9 @@
+- name: condition demo
+  hosts: all
+  tasks:
+  - name: redhat
+    debug:
+       msg: "this is a redhat family"
+  - name: Centos
+    debug:
+       msg: "this is a Centos Family"
