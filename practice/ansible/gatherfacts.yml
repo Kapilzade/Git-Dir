@@ -9,4 +9,7 @@
     - name: print the Register variable
       debug:
         msg: 'Value of the register var is {{ print_out.msg }}'
-
+    - name: print host Ip 
+      debug:
+        msg: 'THIS IS {{ ansible_lo.ipv4.address }}'
+      register: print_out
