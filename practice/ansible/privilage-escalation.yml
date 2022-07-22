@@ -1,0 +1,10 @@
+- name: privilege error 
+  hosts: all
+  tasks:
+     - name: execute dmidecode
+       shell:
+          cmd: dmidecode
+       register: OUT
+     - name: print output
+       debug:
+            msg: "{{OUT}}"
