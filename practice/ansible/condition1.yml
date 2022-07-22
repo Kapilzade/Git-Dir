@@ -8,3 +8,4 @@
   - name: Centos
     debug:
        msg: "this is a Centos Family"
+    when: ansible_os_family == "Centos"
