@@ -8,4 +8,4 @@
 
     - name: print uptime
       debug:
-          msg: "this is Up time {{UT}}"  
+          msg: "{{UT}}"  
