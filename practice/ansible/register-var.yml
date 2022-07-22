@@ -1,7 +1,7 @@
 - name: register variable 
   hosts: all
   tasks:
-     -name: get uptime
-     shell:
-      cmd: uptime
+    - name: get uptime
+      shell:
+          cmd: uptime
     
