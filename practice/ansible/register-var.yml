@@ -2,6 +2,6 @@
   hosts: all
   tasks:
      -name: get uptime
-     -shell:
-         cmd: uptime
+     shell:
+      cmd: uptime
     
