@@ -2,7 +2,7 @@
   hosts: all
   vars_files:
       - ./var.data
-   
+  
   tasks:
    - name: " print hello world1 "
      debug:
