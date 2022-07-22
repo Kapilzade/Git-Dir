@@ -11,4 +11,4 @@
     when: ansible_os_family == "Centos" or ansible_os_family == "RedHat"
 
 
-    #v.m is aws m/c
+    #practice time image is aws m/c
