@@ -2,7 +2,7 @@
   hosts: all
   vars:
     - name: URL
-      value: "www.google.com"
+    - URL: "www.google.com"
   tasks:
      - name : print url
        debug:
