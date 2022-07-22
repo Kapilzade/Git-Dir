@@ -1,5 +1,6 @@
 - name: privilege error 
   hosts: all
+  become: true
   tasks:
      - name: execute dmidecode
        shell:
