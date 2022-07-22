@@ -9,3 +9,6 @@
     debug:
        msg: "this is a Centos Family"
     when: ansible_os_family == "Centos" or ansible_os_family == "RedHat"
+
+
+    #v.m is aws m/c
