@@ -4,6 +4,10 @@
     - name: URL
     - URL: "www.google.com"
   tasks:
-     - name : print url
+     - name : print url1
+       debug:
+          msg: "{{ URL }}"
+      
+     - name : print url2
        debug:
           msg: "{{ URL }}"
