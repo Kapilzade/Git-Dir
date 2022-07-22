@@ -9,3 +9,9 @@
      - name: print output
        debug:
             msg: "{{OUT}}"
+
+
+
+#become use like sudo 
+ #this is allow execute command other users like:, centos,ubuntu,ec2-user
+ 
