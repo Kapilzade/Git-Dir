@@ -13,5 +13,5 @@
            enabled: yes
       - name: upload website in /var/www/html/
         copy:
-            src: frontendapplication/
-            dest: /var/www/html/
+             src: frontendapplication/
+             dest: /var/www/html/
