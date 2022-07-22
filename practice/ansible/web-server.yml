@@ -10,3 +10,7 @@
            name: httpd
            state: started
            enabled: yes
+      - name: upload website in /var/www/html/
+        copy:
+            src: ./index.html
+            dest: /var/www/html/
