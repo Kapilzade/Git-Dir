@@ -1,0 +1,17 @@
+- name: web server playbook
+  hosts: all
+  become: true
+  tasks:
+      - name: install https package
+        yum:
+           name: httpd
+           state: latest
+      - name: service start and enable
+        service:
+           name: httpd
+           state: started
+           enabled: yes
+      - name: upload website in /var/www/html/
+        copy:
+            src: ./frontendapplication/*
+            dest: /var/www/html/
