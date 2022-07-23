@@ -1,2 +1,15 @@
----
-# tasks file for webserver
+- name: install httpd package
+  yum:
+     name: httpd
+     state: latest
+
+- name: service start and enable
+  service:
+         name: httpd
+         state: started
+         enabled: yes
+     
+- name: upload website in /var/www/html/
+  copy:
+         src: frontendapplication/.
+         dest: /var/www/html/
