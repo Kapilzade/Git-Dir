@@ -1,4 +1,6 @@
-- name: roles demo
+- name: role example
   hosts: all
+  become: true
   roles:
-     webserver
+   #- webserver
+   - appserver
