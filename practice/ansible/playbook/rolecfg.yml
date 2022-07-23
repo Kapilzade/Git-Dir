@@ -1,4 +1,4 @@
 - name: roles demo
   hosts: all
   roles:
-     -webserver
+     webserver
