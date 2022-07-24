@@ -1,0 +1,13 @@
+- name: install java
+  package:
+     name: java
+     state: latest
+
+- name: download tomcat 8 
+  get_url: 
+      url: {{ URL }}
+      dest: /opt
+
+- name: unzip tomcat 
+  unarchive:
+      src: /opt/{{ folder }}
