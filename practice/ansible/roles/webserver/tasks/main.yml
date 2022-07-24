@@ -12,5 +12,5 @@
      
 - name: upload website in /var/www/html/
   copy:
-         src: frontendapplication/.
+         src: /.
          dest: /var/www/html/
