@@ -9,8 +9,8 @@
          name: httpd
          state: started
          enabled: yes
-         
+     
 - name: upload website in /var/www/html/
   copy:
-         src: /.
+         src: frontendapplication/.
          dest: /var/www/html/
