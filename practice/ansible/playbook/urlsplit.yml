@@ -16,6 +16,6 @@
 - name: url filter module
   hosts: all
   tasks:
-    - name:
+    - name: url split
   debug: 
       msg: "{{ 'https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.81/bin/apache-tomcat-8.5.81.tar.gz' | basename }}"
