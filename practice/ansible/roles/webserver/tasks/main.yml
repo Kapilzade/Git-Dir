@@ -9,7 +9,7 @@
          name: httpd
          state: started
          enabled: yes
-     
+         become: true   
 - name: upload website in /var/www/html/
   copy:
          src: /.
