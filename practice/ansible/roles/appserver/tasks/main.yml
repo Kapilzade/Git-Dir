@@ -10,10 +10,18 @@
 
 - name: unzip tomcat 
   unarchive:
-      src: /opt/{{ ZIP_PATH }}
+      src: /opt/{{ URL_PATH }}
       dest: /opt/
       remote_src: yes
 
 - name:  download student.war
   get_url:
       url: {{ APP_URL }}
+      src: "{{ TOMCAT_PATH }}/webapps"
+
+- name: catalina service start and stop
+  shell: '{{ TOMCAT_PATH }}/bin/catalina.sh start'
+  
+
+
+
