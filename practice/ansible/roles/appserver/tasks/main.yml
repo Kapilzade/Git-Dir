@@ -5,18 +5,18 @@
 
 - name: download tomcat 8 
   get_url: 
-      url: {{ URL }}
-      dest: /opt
+      url: "{{ URL }}"
+      dest: "/opt"
 
 - name: unzip tomcat 
   unarchive:
-      src: /opt/{{ URL_PATH }}
-      dest: /opt/
+      src: "/opt/{{ URL_PATH }}"
+      dest: "/opt/"
       remote_src: yes
 
 - name:  download student.war
   get_url:
-      url: {{ APP_URL }}
+      url: "{{ APP_URL }}"
       src: "{{ TOMCAT_PATH }}/webapps"
 
 - name: catalina service start and stop
