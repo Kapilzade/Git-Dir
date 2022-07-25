@@ -24,8 +24,7 @@
   template:
       src: ./context.xml
       dest: /opt/{{ TOMCAT_PATH }}/conf/context.xml
-- notify: 
-    - restart tomcat
+
 
 - name: store my sql connector
   get_url:
@@ -34,8 +33,8 @@
 
 
 
-- name: catalina service start and stop
-  shell: '{{ TOMCAT_PATH }}/bin/catalina.sh start'
+#- name: catalina service start and stop
+#  shell: '{{ TOMCAT_PATH }}/bin/catalina.sh start'
   
 
 
