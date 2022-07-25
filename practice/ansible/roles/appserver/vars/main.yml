@@ -2,7 +2,7 @@ URL: "https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.81/bin/apache-tomcat-8.5.81.
 URL_PATH: "{{ URL | basename }}"
 TOMCAT_PATH: "/opt/{{ URL_PATH | regex_replace('.tar.gz','') }}"
 APP_URL : "https://s3-us-west-2.amazonaws.com/studentapi-cit/student.war"
-
+MYSQL_LIB_URL: https://s3-us-west-2.amazonaws.com/studentapi-cit/mysql-connector.jar
 
 
 
