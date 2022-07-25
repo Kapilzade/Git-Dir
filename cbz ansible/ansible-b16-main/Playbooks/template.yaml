@@ -1,0 +1,14 @@
+- name: template example
+  hosts: all
+  vars:
+    MY_URL: "XYZ"
+  tasks:
+    - name: copy
+      copy: 
+        src: ./demo.txt
+        dest: ~/copy.txt
+
+    - name: template
+      template:
+        src: ./demo.txt
+        dest: ~/template.txt
