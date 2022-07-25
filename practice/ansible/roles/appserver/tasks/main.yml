@@ -18,7 +18,7 @@
 - name:  download student.war
   get_url:
       url: "{{ APP_URL }}"
-      src: "{{ TOMCAT_PATH }}/webapps"
+      dest: "{{ TOMCAT_PATH }}/webapps"
 
 - name: catalina service start and stop
   shell: '{{ TOMCAT_PATH }}/bin/catalina.sh start'
