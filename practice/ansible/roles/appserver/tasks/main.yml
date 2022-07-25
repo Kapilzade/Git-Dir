@@ -10,4 +10,8 @@
 
 - name: unzip tomcat 
   unarchive:
-      src: /opt/{{ folder }}
+      src: /opt/{{ URL_PATH }}
+      dest: /opt/
+      remote_src: yes
+
+- name: 
