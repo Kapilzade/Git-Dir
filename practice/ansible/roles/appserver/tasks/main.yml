@@ -10,7 +10,7 @@
 
 - name: unzip tomcat 
   unarchive:
-      src: "/opt/{{ ZIP_PATH }}"
+      src: "/opt/{{ URL_PATH }}"
       dest: "/opt/"
       remote_src: yes
 
