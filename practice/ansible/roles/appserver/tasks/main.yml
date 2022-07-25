@@ -20,6 +20,20 @@
       url: "{{ APP_URL }}"
       dest: "{{ TOMCAT_PATH }}/webapps"
 
+- name: upload configure file
+  template:
+      src: ./context.xml
+      dest: /opt/{{ TOMCAT_PATH }}/conf/context.xml
+- notify: 
+    - restart tomcat
+
+- name: store my sql connector
+  get_url:
+      url: "{{ MYSQL_LIB_URL }}"
+      dest: /opt/{{ TOMCAT_PATH }}/lib/
+
+
+
 - name: catalina service start and stop
   shell: '{{ TOMCAT_PATH }}/bin/catalina.sh start'
   
