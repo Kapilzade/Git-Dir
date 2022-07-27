@@ -9,5 +9,6 @@ region = "us-east-2"
   instance_type = "t2.micro"
   key_name = "flame"
   availability_zone = "us-east-2a"
+  security_groups = "launch-wizard-2"
 
   }
