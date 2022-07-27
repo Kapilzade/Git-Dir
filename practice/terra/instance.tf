@@ -2,9 +2,11 @@ provider "aws" {
 region = "us-east-2"
 }
   resource "aws_instance" "app-server" {
-  name = "app_server"
+  tags = {
+    "Name" = "appserver"
+  }
   ami =  "ami-02d1e544b84bf7502"
   instance_type = "t2.micro"
   key_name = "flame"
-  
+
   }
