@@ -6,5 +6,5 @@ region = "us-east-2"
   ami =  "ami-02d1e544b84bf7502"
   instance_type = "t2.micro"
   key_name = "flame"
-  iam_instance_profile = aws_iam_instance_profile.ec2_profile.name
-}
+  
+  }
