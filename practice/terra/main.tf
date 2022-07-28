@@ -6,4 +6,7 @@ resource "aws_instance" "web" {
   }
 }
 
+resource "aws_instance" "db" {
+  ami = "${var.ami-id-map[ubuntu]}"
+}
 
