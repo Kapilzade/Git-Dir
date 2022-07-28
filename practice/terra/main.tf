@@ -13,6 +13,7 @@ resource "aws_instance" "db" {
   tags = {
     Name = "instance02"
   }
+  associate_public_ip_address = "${var.public_ip_enable}"
 }
 
 
