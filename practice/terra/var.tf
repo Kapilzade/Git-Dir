@@ -17,3 +17,9 @@ variable "ami-id-map" {
       awsmachine = "ami-02d1e544b84bf7502"
     }
 }
+
+variable "public_ip_enable" {
+   type = boolean
+   default = false
+  
+}
