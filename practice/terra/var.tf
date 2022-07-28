@@ -19,7 +19,7 @@ variable "ami-id-map" {
 }
 
 variable "public_ip_enable" {
-   type = boolean
+   type = "boolean"
    default = false
   
 }
