@@ -9,7 +9,7 @@ resource "aws_instance" "web" {
 
 
 
-/*
+
 resource "aws_instance" "web" {
     ami = "${var.ami-id}"
     instance_type = "${var.instance-type-list[2]}"
@@ -17,4 +17,3 @@ resource "aws_instance" "web" {
         Name = "instance1"
   }
 }
-*/
