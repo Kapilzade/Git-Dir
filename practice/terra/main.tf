@@ -8,7 +8,7 @@ resource "aws_instance" "web" {
 }
 */
 resource "aws_instance" "db" {
-  ami = "${var.ami-id-map[ubuntu]}"
+  ami = "${var.ami-id-map[rhel]}"
   instance_type = "${var.instance_type_list[0]}"
   tags = {
     Name = "instance02"
