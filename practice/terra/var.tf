@@ -5,6 +5,6 @@ variable "ami-id" {
 
 
 variable "instance_type_list" {
-  type = "list"
+  type = list
   default = ["t2.micro","t3.small","t3.micro"]
 }
