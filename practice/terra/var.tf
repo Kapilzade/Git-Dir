@@ -10,7 +10,7 @@ variable "instance_type_list" {
 }
 
 variable "ami-id-map" {
-    type = "map"
+    type = map
     default = {  
       ubuntu = "ami-02f3416038bdb17fb"
       rhel = "ami-092b43193629811af"
