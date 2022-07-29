@@ -9,7 +9,7 @@ resource "aws_vpc" "my_vpc" {
 }
 
 resource "aws_subnet" "private_subnet" {
-  vpc_id = "${aws_vpc.my_vpc}"
+  vpc_id = "${aws_vpc.my_vpc.id}"
   cidr_block = "192.168.0.0/20"
   tags = {
     Name = "private_subnet"
