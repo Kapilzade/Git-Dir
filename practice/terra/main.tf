@@ -32,3 +32,6 @@ data "aws_subnet" "subnet"{
   }
   }
 
+output "subnetid" {
+   value = "${data.aws_subnet.subnet.id}"  
+}
