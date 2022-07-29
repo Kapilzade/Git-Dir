@@ -13,7 +13,7 @@ resource "aws_instance" "db" {
   tags = {
     Name = "instance02"
   }
-
+  key_name = "flame"
   user_data = <<EOF
     yum install httpd -y
     systemctl start httpd
