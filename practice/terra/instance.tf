@@ -5,7 +5,7 @@ region = "us-east-2"
   tags = {
     "Name" = "demo"
   }
-  ami =  "ami-02d1e544b84bf7502"
+  ami =  "ami-02d1e544b84bf750"
   instance_type = "t2.micro"
   key_name = "flame"
   availability_zone = "us-east-2a"
