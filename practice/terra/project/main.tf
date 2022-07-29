@@ -18,7 +18,7 @@ resource "aws_subnet" "private_subnet" {
 }
 
 resource "aws_subnet" "public_subnet" {
-  vpc_id = "${aws_vpc.my_vpc}"
+  vpc_id = "${aws_vpc.my_vpc.id}"
   cidr_block = "192.168.0.0/20"
   tags = {
     "Name" = "public_subnet"
