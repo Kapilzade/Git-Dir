@@ -15,7 +15,7 @@ resource "aws_instance" "db" {
   }
 
   user_data = <<EOF
-    yum install httpd
+    yum install httpd -y
     systemctl start httpd
     systemctl enable httpd
     EOF
