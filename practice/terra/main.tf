@@ -26,4 +26,9 @@ output "pri_ip" {
   
 }
 
+data "aws_subnet" "subnet"{
+  tags = {
+    "Name" = "mysubnet"
+  }
+  }
 
