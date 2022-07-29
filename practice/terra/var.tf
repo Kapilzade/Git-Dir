@@ -22,3 +22,9 @@ variable "public_ip_enable" {
    default = false
   
 }
+
+variable "instance_key" {
+  type = string
+  default = "flame"
+  
+}
