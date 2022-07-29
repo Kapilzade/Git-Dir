@@ -17,7 +17,7 @@ resource "aws_instance" "db" {
 }
 
 output "ami-id-print" {
-  value = "${var.ami-id-map["rhrl"]}"
+  value = "${var.ami-id-map["rhel"]}"
   
 }
 
