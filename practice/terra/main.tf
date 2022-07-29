@@ -16,5 +16,14 @@ resource "aws_instance" "db" {
   associate_public_ip_address = "${var.public_ip_enable}"
 }
 
+output "ami-id-print" {
+  value = "${var.ami-id-map["rhrl"]}"
+  
+}
+
+output "pri_ip" {
+  value = "${aws_instance.db.private_ip}"
+  
+}
 
 
