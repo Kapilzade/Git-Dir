@@ -50,7 +50,11 @@ resource "aws_autoscaling_group" "AS1" {
     min_size = 1
     desired_capacity = 2
     vpc_zone_identifier = ["${aws_subnet.public_subnet.id}" ,"${aws_subnet.private_subnet.id}"]
-    
+  tag {
+    key = "Name"
+    value = "home_page"
+    propagate_at_launch = true
+  }
 }
 
 resource "aws_autoscaling_group" "AS2" {
@@ -60,7 +64,11 @@ resource "aws_autoscaling_group" "AS2" {
     min_size = 1
     desired_capacity = 2
     vpc_zone_identifier = ["${aws_subnet.public_subnet.id}" ,"${aws_subnet.private_subnet.id}"]
-    
+   tag {
+    key = "Name"
+    value = "mobile_page"
+    propagate_at_launch = true
+  }   
 }
 
 
@@ -71,5 +79,9 @@ resource "aws_autoscaling_group" "AS3" {
     min_size = 1
     desired_capacity = 2
     vpc_zone_identifier = ["${aws_subnet.public_subnet.id}" ,"${aws_subnet.private_subnet.id}"]
- 
+   tag {
+    key = "Name"
+    value = "laptop_page"
+    propagate_at_launch = true
+  }
 }
