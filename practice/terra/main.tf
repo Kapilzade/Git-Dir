@@ -16,6 +16,7 @@ resource "aws_instance" "db" {
   key_name = "${var.instance_key}"
   
   user_data = <<EOF
+    #! /bin/bash
     yum install httpd -y
     systemctl start httpd
     systemctl enable httpd
