@@ -11,6 +11,7 @@ resource "aws_vpc" "my_vpc" {
 resource "aws_subnet" "private_subnet" {
   vpc_id = "${aws_vpc.my_vpc.id}"
   cidr_block = "192.168.0.0/20"
+  availability_zone = "us-east-2a"
   tags = {
     Name = "private_subnet"
     Env = "${var.env}"
@@ -20,6 +21,7 @@ resource "aws_subnet" "private_subnet" {
 resource "aws_subnet" "public_subnet" {
   vpc_id = "${aws_vpc.my_vpc.id}"
   cidr_block = "192.168.16.0/20"
+  availability_zone = "us-east-2b"
   tags = {
     "Name" = "public_subnet"
     Env = "${var.env}"
