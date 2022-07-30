@@ -50,9 +50,7 @@ resource "aws_autoscaling_group" "AS1" {
     min_size = 1
     desired_capacity = 2
     vpc_zone_identifier = ["${aws_subnet.public_subnet}" ,"${aws_subnet.private_subnet}"]
-    tags = {
-        ENV = "${var.env}"
-    }
+    
 }
 
 resource "aws_autoscaling_group" "AS2" {
@@ -62,9 +60,7 @@ resource "aws_autoscaling_group" "AS2" {
     min_size = 1
     desired_capacity = 2
     vpc_zone_identifier = ["${aws_subnet.public_subnet}" ,"${aws_subnet.private_subnet}"]
-    tags = {
-        ENV = "${var.env}"
-    }
+    
 }
 
 
@@ -75,7 +71,5 @@ resource "aws_autoscaling_group" "AS3" {
     min_size = 1
     desired_capacity = 2
     vpc_zone_identifier = ["${aws_subnet.public_subnet}" ,"${aws_subnet.private_subnet}"]
-    tags = {
-        ENV = "${var.env}"
-    }
+ 
 }
