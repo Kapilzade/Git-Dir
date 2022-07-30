@@ -6,9 +6,9 @@ resource "aws_launch_configuration" "lc1" {
   key_name = "flame"
   user_data = <<EOF
      #! /bin/bash
-     yum install httpd -y
-     systemctl start httpd
-     systemctl enable httpd
+     sudo yum install httpd -y
+     sudo systemctl start httpd
+     sudo systemctl enable httpd
      echo "<H1>Hello Domya" > /var/www/html/index.html
      EOF
  
@@ -22,9 +22,9 @@ resource "aws_launch_configuration" "lc2" {
   key_name = "flame"
   user_data = <<EOF
      #! /bin/bash
-     yum install httpd -y
-     systemctl start httpd
-     systemctl enable httpd
+     sudo yum install httpd -y
+     sudo systemctl start httpd
+     sudo systemctl enable httpd
      echo "<H1>Hello Domya on mobile" > /var/www/html/mobile/index.html
      EOF
 
@@ -38,9 +38,9 @@ resource "aws_launch_configuration" "lc3" {
   key_name = "flame"
   user_data = <<EOF
      #! /bin/bash
-     yum install httpd -y
-     systemctl start httpd
-     systemctl enable httpd
+     sudo yum install httpd -y
+     sudo systemctl start httpd
+     sudo systemctl enable httpd
      echo "<H1>Hello Domya on laptop" > /var/www/html/laptop/index.html
      EOF
  
