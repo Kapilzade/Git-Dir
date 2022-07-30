@@ -5,6 +5,7 @@ resource "aws_launch_configuration" "lc1" {
   security_groups = ["${aws_vpc.my_vpc.default_security_group_id}"]
   key_name = "flame"
   user_data = <<EOF
+     #! /bin/bash
      yum install httpd -y
      systemctl start httpd
      systemctl enable httpd
@@ -20,6 +21,7 @@ resource "aws_launch_configuration" "lc2" {
   security_groups = ["${aws_vpc.my_vpc.default_security_group_id}"]
   key_name = "flame"
   user_data = <<EOF
+     #! /bin/bash
      yum install httpd -y
      systemctl start httpd
      systemctl enable httpd
@@ -35,6 +37,7 @@ resource "aws_launch_configuration" "lc3" {
   security_groups = ["${aws_vpc.my_vpc.default_security_group_id}"]
   key_name = "flame"
   user_data = <<EOF
+     #! /bin/bash
      yum install httpd -y
      systemctl start httpd
      systemctl enable httpd
