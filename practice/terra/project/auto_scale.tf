@@ -23,6 +23,7 @@ resource "aws_launch_configuration" "lc2" {
   key_name = "flame"
   user_data = <<EOF
      #! /bin/bash
+     sudo yum update
      sudo yum install httpd -y
      sudo systemctl start httpd
      sudo systemctl enable httpd
@@ -39,6 +40,7 @@ resource "aws_launch_configuration" "lc3" {
   key_name = "flame"
   user_data = <<EOF
      #! /bin/bash
+     sudo yum update
      sudo yum install httpd -y
      sudo systemctl start httpd
      sudo systemctl enable httpd
