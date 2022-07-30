@@ -10,9 +10,7 @@ resource "aws_launch_configuration" "lc1" {
      systemctl enable httpd
      echo "<H1>Hello Domya" > /var/www/html/index.html
      EOF
-  tags = {
-     ENV = "${var.env}"
-  }
+ 
 }
 
 resource "aws_launch_configuration" "lc2" {
@@ -27,9 +25,7 @@ resource "aws_launch_configuration" "lc2" {
      systemctl enable httpd
      echo "<H1>Hello Domya on mobile" > /var/www/html/mobile/index.html
      EOF
-   tags = {
-     ENV = "${var.env}"
-  }
+
 }
 
 resource "aws_launch_configuration" "lc3" {
@@ -44,9 +40,7 @@ resource "aws_launch_configuration" "lc3" {
      systemctl enable httpd
      echo "<H1>Hello Domya on laptop" > /var/www/html/laptop/index.html
      EOF
-  tags = {
-     ENV = "${var.env}"
-  }
+ 
 }
 
 resource "aws_autoscaling_group" "AS1" {
