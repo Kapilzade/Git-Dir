@@ -49,7 +49,7 @@ resource "aws_autoscaling_group" "AS1" {
     max_size = 3
     min_size = 1
     desired_capacity = 2
-    vpc_zone_identifier = ["${aws_subnet.public_subnet}" ,"${aws_subnet.private_subnet}"]
+    vpc_zone_identifier = ["${aws_subnet.public_subnet.id}" ,"${aws_subnet.private_subnet.id}"]
     
 }
 
