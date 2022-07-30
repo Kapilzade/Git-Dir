@@ -60,3 +60,28 @@ resource "aws_autoscaling_group" "AS1" {
         ENV = "${var.env}"
     }
 }
+
+resource "aws_autoscaling_group" "AS2" {
+    name = "mobile_asg"
+    launch_configuration = "${aws_launch_configuration.lc2.name}"
+    max_size = 3
+    min_size = 1
+    desired_capacity = 2
+    vpc_zone_identifier = ["${aws_subnet.public_subnet}" ,"${aws_subnet.private_subnet}"]
+    tags = {
+        ENV = "${var.env}"
+    }
+}
+
+
+resource "aws_autoscaling_group" "AS3" {
+    name = "laptop_asg"
+    launch_configuration = "${aws_launch_configuration.lc3.name}"
+    max_size = 3
+    min_size = 1
+    desired_capacity = 2
+    vpc_zone_identifier = ["${aws_subnet.public_subnet}" ,"${aws_subnet.private_subnet}"]
+    tags = {
+        ENV = "${var.env}"
+    }
+}
