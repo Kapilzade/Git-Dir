@@ -10,6 +10,9 @@ resource "aws_launch_configuration" "lc1" {
      systemctl enable httpd
      echo "<H1>Hello Domya" > /var/www/html/index.html
      EOF
+  tags = {
+     ENV = "${var.env}"
+  }
 }
 
 resource "aws_launch_configuration" "lc2" {
@@ -24,6 +27,9 @@ resource "aws_launch_configuration" "lc2" {
      systemctl enable httpd
      echo "<H1>Hello Domya on mobile" > /var/www/html/mobile/index.html
      EOF
+   tags = {
+     ENV = "${var.env}"
+  }
 }
 
 resource "aws_launch_configuration" "lc3" {
@@ -38,4 +44,19 @@ resource "aws_launch_configuration" "lc3" {
      systemctl enable httpd
      echo "<H1>Hello Domya on laptop" > /var/www/html/laptop/index.html
      EOF
+  tags = {
+     ENV = "${var.env}"
+  }
+}
+
+resource "aws_autoscaling_group" "AS1" {
+    name = "home_asg"
+    launch_configuration = "${aws_launch_configuration.lc1.name}"
+    max_size = 3
+    min_size = 1
+    desired_capacity = 2
+    vpc_zone_identifier = ["${aws_subnet.public_subnet}" ,"${aws_subnet.private_subnet}"]
+    tags = {
+        ENV = "${var.env}"
+    }
 }
