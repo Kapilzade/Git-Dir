@@ -2,7 +2,7 @@ resource "aws_launch_configuration" "lc1" {
   name          = "home_lc"
   image_id      = "${var.ami-id-map["rhel"]}"
   instance_type = "${var.instance_type_list[0]}"
-  security_groups = ["sg-029011d94639a2680"]
+  security_groups = ["${aws_vpc.my_vpc.default_security_group_id}"]
   key_name = "flame"
   user_data = <<EOF
      yum install httpd -y
@@ -17,7 +17,7 @@ resource "aws_launch_configuration" "lc2" {
   name          = "mobile_lc"
   image_id      = "${var.ami-id-map["rhel"]}"
   instance_type = "${var.instance_type_list[0]}"
-  security_groups = ["sg-029011d94639a2680"]
+  security_groups = ["${aws_vpc.my_vpc.default_security_group_id}"]
   key_name = "flame"
   user_data = <<EOF
      yum install httpd -y
@@ -32,7 +32,7 @@ resource "aws_launch_configuration" "lc3" {
   name          = "laptop_lc"
   image_id      = "${var.ami-id-map["rhel"]}"
   instance_type = "${var.instance_type_list[0]}"
-  security_groups = ["sg-029011d94639a2680"]
+  security_groups = ["${aws_vpc.my_vpc.default_security_group_id}"]
   key_name = "flame"
   user_data = <<EOF
      yum install httpd -y
