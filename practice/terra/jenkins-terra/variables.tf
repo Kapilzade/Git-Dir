@@ -1,5 +1,5 @@
 variable "region" {
-  default = "us-west-2"
+  default = "us-east-2"
 }
 variable "environment" {
   default = "Development"
@@ -32,5 +32,5 @@ variable "instance_ami" {
 
 }
 variable "keyname" {
-  default = "tf-jenkins-aws"
+  default = "flame"
 }
